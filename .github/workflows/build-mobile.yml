@@ -44,7 +44,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          zipfile='VNGameBooster_NGUON_CHUAN.zip'
+          zipfile='VNGameBooster_NGUON_CHUAN (1).zip'
           test -f "$zipfile" || { echo "::error::Khong tim thay $zipfile trong Code"; exit 1; }
           unzip -tq "$zipfile" >/dev/null
           mkdir -p "$RUNNER_TEMP/vn-booster"
